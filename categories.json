@@ -1,0 +1,31 @@
+[
+    {
+        "id":1,
+        "logo":"https://img.freepik.com/free-photo/3d-morph-man-with-calculator_1048-10369.jpg?w=740&t=st=1706774389~exp=1706774989~hmac=9142c5429c20f173b00341fbebb55b23bcfe9926a999683f414f768e0e9e4645",
+        "category_name":"Account & Finance",
+        "availability":"300 Jobs Available"
+
+    },
+    {
+        "id":2,
+        "logo":"https://img.freepik.com/free-photo/ideas-idea-vision-design-plan-objective-mission-concept_53876-167112.jpg?w=740&t=st=1706774451~exp=1706775051~hmac=ade5c769b170209dc7ea0e07eea14e31122c14579157cdf0f2589ed0f93c3924",
+        "category_name":"Creative Design",
+        "availability":"100+ Jobs Available"
+
+    },
+    {
+        "id":3,
+        "logo":"https://img.freepik.com/free-photo/rag-doll-with-bar-graph-green-pencil_1156-248.jpg?w=740&t=st=1706774504~exp=1706775104~hmac=e4705e788060c2d012c803aefa97be6c80c6677f23952ec0e88d760b3e616720",
+        "category_name":"Marketing & Sales",
+        "availability":"150 Jobs Available"
+
+    },
+    {
+        "id":4,
+        "logo":"https://img.freepik.com/free-photo/worker-with-hammer_1048-1733.jpg?w=740&t=st=1706774540~exp=1706775140~hmac=735884c5c5caabd924e6643ebe37df4881089bb293143aa57c67b3f34bd0cd4a",
+        "category_name":"Engineering Job",
+        "availability":"224 Jobs Available"
+
+    }
+
+]
