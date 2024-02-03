@@ -12,7 +12,7 @@ const Categories = () => {
   return (
     <div>
       <div>
-        <h1 className="text-5xl text-center font-semibold my-5">
+        <h1 className="text-5xl text-center font-semibold my-10 max-w-6xl mx-auto">
           Job Category List
         </h1>
         <p className="text-center">

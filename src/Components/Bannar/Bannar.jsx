@@ -4,7 +4,7 @@ const Bannar = () => {
     <div>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse max-w-6xl mx-auto">
-          <img src={bannarPic} className="md:w-60 " />
+          <img src={bannarPic} className="md:max-w-lg " />
           <div>
             <h1 className="text-5xl font-bold">
               One Step Closer To Your{" "}
