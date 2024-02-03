@@ -6,12 +6,13 @@ const Features = () => {
   const [loadmore, setLoadmore] = useState(4);
 
   useEffect(() => {
-    const url = "/jobs.json";
+    const url = "/src/file/jobs.json";
     fetch(url)
       .then((res) => res.json())
       .then((features) => setFeatures(features));
   }, []);
   //   console.log(loadmore);
+  console.log(features);
   return (
     <div className="max-w-6xl mx-auto">
       <div>

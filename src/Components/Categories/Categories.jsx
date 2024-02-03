@@ -4,7 +4,7 @@ import Category from "../Category/Category";
 const Categories = () => {
   const [categories, setCategoris] = useState([]);
   useEffect(() => {
-    const url = "/categories.json";
+    const url = "/src/file/categories.json";
     fetch(url)
       .then((res) => res.json())
       .then((categories) => setCategoris(categories));
