@@ -1,5 +1,13 @@
+import Bannar from "../Bannar/Bannar";
+import Categories from "../Categories/Categories";
+
 const Home = () => {
-  return <div>this is home page</div>;
+  return (
+    <div>
+      <Bannar></Bannar>
+      <Categories></Categories>
+    </div>
+  );
 };
 
 export default Home;
