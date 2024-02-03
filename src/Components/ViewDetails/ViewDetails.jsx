@@ -5,15 +5,25 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaRegAddressCard } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { saveLocalStorage } from "../LocalStorage/LocalStorage";
 
 const ViewDetails = () => {
   //   const [jobsetApplied, setJobsetApplied] = useState([]);
   const jobs = useLoaderData();
   const { id } = useParams();
+  const prsId = parseInt(id);
   const job = jobs.find((job) => job.id == id);
-  console.log(job);
+  //   console.log(job);
   //   setJobsetApplied(job);
   //   console.log(jobsetApplied);
+
+  const handleApplyBtn = () => {
+    saveLocalStorage(prsId);
+    toast("you have done apply successfully");
+    console.log(id);
+  };
   return (
     <div className="">
       <div className=" h-80  bg-[#f9f9ff] flex items-center justify-center font-extrabold">
@@ -51,7 +61,7 @@ const ViewDetails = () => {
               <span className="font-bold"> Salary: </span>
               {job.salary}{" "}
             </h3>
-            <h3 className="my-2 flex items-center gap-2">
+            <h3 className="my-2 flex justify-start items-center gap-2">
               <FaCalendarAlt />
 
               <span className="font-bold">Job Title: </span>
@@ -79,7 +89,10 @@ const ViewDetails = () => {
               {job.contact_information.address}
             </h3>
           </div>
-          <div className="btn btn-primary w-full my-10">
+          <div
+            onClick={handleApplyBtn}
+            className="btn btn-primary w-full my-10"
+          >
             <button>Apply now</button>
           </div>
         </div>
@@ -89,6 +102,7 @@ const ViewDetails = () => {
           <button className="btn btn-primary">back to home page</button>{" "}
         </Link>
       </div>
+      <ToastContainer />
     </div>
   );
 };

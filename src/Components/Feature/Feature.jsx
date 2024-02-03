@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Feature = ({ feature }) => {
   const handleView = (id) => {
-    console.log("clicked", id);
+    // console.log("clicked", id);
   };
   const {
     logo,
