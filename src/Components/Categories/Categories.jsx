@@ -19,7 +19,7 @@ const Categories = () => {
           Explore thousands of job opportunities with all the information you
           need. Its your future
         </p>
-        <div className=" md:flex max-w-6xl mx-auto gap-4 my-10">
+        <div className=" md:flex md:max-w-6xl mx-auto gap-4 my-10">
           {categories.map((category) => (
             <Category key={category.id} category={category}></Category>
           ))}

@@ -11,7 +11,7 @@ const Features = () => {
       .then((res) => res.json())
       .then((features) => setFeatures(features));
   }, []);
-  console.log(loadmore);
+  //   console.log(loadmore);
   return (
     <div className="max-w-6xl mx-auto">
       <div>
@@ -23,7 +23,7 @@ const Features = () => {
           need. Its your future
         </p>
       </div>
-      <div className="md:grid md:grid-cols-2 mx-auto">
+      <div className="md:grid md:grid-cols-2 mx-auto gap-4">
         {features.slice(0, loadmore).map((feature) => (
           <Feature key={feature.id} feature={feature}></Feature>
         ))}
