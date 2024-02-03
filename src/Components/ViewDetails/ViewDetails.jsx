@@ -15,8 +15,11 @@ const ViewDetails = () => {
   //   setJobsetApplied(job);
   //   console.log(jobsetApplied);
   return (
-    <div className=" my-10">
-      <div className="  md:max-w-6xl mx-auto flex">
+    <div className="">
+      <div className=" h-80  bg-[#f9f9ff] flex items-center justify-center font-extrabold">
+        <h1 className="text-4xl">Job Details</h1>
+      </div>
+      <div className="  md:max-w-6xl mx-auto md:flex my-5">
         <div className=" w-2/3  mr-10">
           <div className="my-10">
             <h3>
@@ -40,7 +43,7 @@ const ViewDetails = () => {
             <span>{job.experiences}</span>
           </h3>
         </div>
-        <div className="w-2/6 bg-[#f4f2ff] p-5">
+        <div className="md:w-2/6 bg-[#f4f2ff] p-5">
           <h1 className="font-bold border-b py-4">Job Details</h1>
           <div>
             <h3 className="my-2 flex items-center gap-2">
